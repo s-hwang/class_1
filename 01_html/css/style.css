@@ -1,0 +1,22 @@
+/*reset*/
+body{margin:0; padding:0}
+h1,h2{margin:0}
+
+.header{background: #333;}
+.header h1{color:#fff; padding:20px}
+
+.container{max-width:1000px; margin: 0 auto; }
+
+.gallery{margin-top:30px}
+.gallery:after{content: ''; display: block; clear: both}/*unit float 해제를 위한 clear*/
+.gallery .unit{float:left; width:33.3%; padding:5px; box-sizing: border-box}
+.gallery .unit .box_img{}
+.gallery .unit .box_img img{width:100%}
+
+@media all and (max-width:640px){
+	.gallery .unit{width:50%}
+}
+
+@media all and (max-width:480px){
+	.gallery .unit{width:auto}
+}
